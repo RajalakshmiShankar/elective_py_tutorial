@@ -1,3 +1,13 @@
 number=int(input("Enter a number:"))
-square_root=number**0.5
-print("The Square root of ",number ,"is",square_root)
+z=1
+if number < 0:
+     print("Square root of a negative number is not a real number.")
+else:
+    for num in range(number):
+        if number==(z*z):
+            break
+        z=z+1
+    z= (z+number/z)/2
+    err=abs(number-z**2)
+    if err==0:
+        print("The Square root of ",number ,"is",z)
