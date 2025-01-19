@@ -7,4 +7,4 @@ print("\nYear\tAmount")
 amount=initial_investment
 for year in range(0,year):
     amount+=amount*annual_interest_rate
-    print(f"{year+1}\t{amount:.2f}")
+    print(year+1, "\t", "%.2f" % amount)
