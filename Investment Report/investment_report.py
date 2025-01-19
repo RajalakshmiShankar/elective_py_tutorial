@@ -1,11 +1,13 @@
 
-#ROI formula: ROI = ((current_value - investment_amount) / investment_amount) * 100
 
-investment_amount = float(input("Enter the initial investment amount: "))
-current_value = float(input("Enter the current value of the investment: "))
 
-roi = ((current_value - investment_amount) / investment_amount) * 100
+initial_investment = float(input("Enter the initial investment amount: "))
+annual_interest_rate= float(input("Enter the annual interest rate(in %):"))
+year=int (input("Enter the number of years:"))
+annual_interest_rate/=100
 
-print("Return on Investment (ROI): {:.2f}".format(roi))
-
-#print("Return on Investment (ROI):",roi:.2f)
+print("\nYear\tAmount")
+amount=initial_investment
+for year in range(0,year):
+    amount+=amount*annual_interest_rate
+    print(f"{year+1}\t{amount:.2f}")
